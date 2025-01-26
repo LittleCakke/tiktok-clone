@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         });
 
         // Exclude canvas from being processed by Next.js in the browser
-        // if (!isServer) config.externals.push("canvas");
+        if (!isServer) config.externals.push("canvas");
 
         return config;
     }
