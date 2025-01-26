@@ -8,11 +8,11 @@ import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import ClientOnly from "@/app/components/ClientOnly";
 import CommentHeader from "@/app/components/post/CommentHeader";
 import Comments from "@/app/components/post/Comments";
-import type { PostPageTypes } from "@/app/types";
 import { usePostStore } from "@/app/stores/post";
 import { useLikeStore } from "@/app/stores/like";
 import { useCommentStore } from "@/app/stores/comment";
 import useCreateBucketUrl from "@/app/hooks/useCreateBucketUrl";
+import type { PostPageTypes } from "@/app/types";
 
 export default function Post({ params }: PostPageTypes)
 {
